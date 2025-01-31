@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML dan CSS untuk Pemula - Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-800 text-lg">khai.</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="index.html" class="py-4 px-2 text-gray-800 font-semibold hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="index.html#about" class="py-4 px-2 text-gray-800 font-semibold hover:text-blue-500 transition duration-300">About</a>
+                    <a href="blog.html" class="py-4 px-2 text-blue-500 font-semibold">Blog</a>
+                    <a href="index.html#contact" class="py-4 px-2 text-gray-800 font-semibold hover:text-blue-500 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <div class="pt-24 pb-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+             <!-- Tombol Kembali -->
+        <button onclick="goBack()" class="mb-8 text-blue-500 hover:text-blue-600 flex items-center">
+            <i class="fas fa-arrow-left mr-2"></i> Kembali
+        </button>
+            <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="htmlcss.png" alt="Web Development" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="text-blue-500 text-sm font-semibold">Web Development</span>
+                        <span class="text-gray-400">•</span>
+                        <span class="text-gray-500 text-sm">31 Januari 2025</span>
+                    </div>
+                    <h1 class="text-3xl font-bold text-gray-800 mb-6">Belajar HTML dan CSS untuk Pemula</h1>
+                    
+                    <div class="prose max-w-none">
+                        <p class="text-gray-600 mb-4">
+                            HTML (HyperText Markup Language) dan CSS (Cascading Style Sheets) adalah dua teknologi fundamental dalam pengembangan web modern. Artikel ini akan membahas dasar-dasar yang perlu Anda ketahui untuk memulai perjalanan Anda dalam web development.
+                        </p>
+
+                        <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Apa itu HTML?</h2>
+                        <p class="text-gray-600 mb-4">
+                            HTML adalah bahasa markup standar untuk membuat halaman web. Ini memberikan struktur dasar untuk konten web Anda, memungkinkan Anda menentukan elemen seperti heading, paragraf, gambar, link, dan banyak lagi.
+                        </p>
+
+                        <h3 class="text-xl font-bold text-gray-800 mt-6 mb-3">Contoh struktur HTML dasar:</h3>
+                        <pre class="bg-gray-100 p-4 rounded-lg mb-4">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Judul Halaman&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Ini adalah heading&lt;/h1&gt;
+        &lt;p&gt;Ini adalah paragraf.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                        </pre>
+
+                        <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Pengenalan CSS</h2>
+                        <p class="text-gray-600 mb-4">
+                            CSS adalah bahasa yang digunakan untuk mendesain dan mengatur tampilan elemen HTML. Dengan CSS, Anda dapat mengontrol warna, ukuran, spasi, tata letak, dan banyak aspek visual lainnya dari halaman web Anda.
+                        </p>
+
+                        <h3 class="text-xl font-bold text-gray-800 mt-6 mb-3">Contoh CSS dasar:</h3>
+                        <pre class="bg-gray-100 p-4 rounded-lg mb-4">
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+
+p {
+    color: gray;
+    line-height: 1.6;
+}
+                        </pre>
+
+                        <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Langkah Selanjutnya</h2>
+                        <p class="text-gray-600 mb-4">
+                            Setelah memahami dasar-dasar HTML dan CSS, Anda dapat mulai:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4 space-y-2">
+                            <li>Membuat proyek website sederhana</li>
+                            <li>Mempelajari CSS Flexbox dan Grid</li>
+                            <li>Mengenal responsive design</li>
+                            <li>Mengeksplorasi CSS frameworks seperti Tailwind CSS</li>
+                        </ul>
+
+                        <div class="mt-8 p-4 bg-blue-50 rounded-lg">
+                            <h3 class="text-xl font-bold text-blue-800 mb-2">Rekomendasi Belajar</h3>
+                            <p class="text-blue-600">
+                                Untuk memperdalam pemahaman Anda, cobalah untuk membuat beberapa proyek kecil dan praktikkan apa yang telah Anda pelajari. Ingat, praktik adalah kunci untuk menguasai pengembangan web.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Author Info -->
+                    <div class="mt-8 pt-8 border-t">
+                        <div class="flex items-center">
+                            <img src="iu.png" alt="Author" class="w-12 h-12 rounded-full">
+                            <div class="ml-4">
+                                <p class="text-gray-800 font-semibold">Khaisar Rizki Maulana</p>
+                                <p class="text-gray-600 text-sm">Web Developer & Content Creator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Navigation between posts -->
+            <!-- <div class="mt-8 flex justify-between">
+                <a href="#" class="text-blue-500 hover:text-blue-600">← Artikel Sebelumnya</a>
+                <a href="#" class="text-blue-500 hover:text-blue-600">Artikel Selanjutnya →</a>
+            </div> -->
+        </div>
+    </div>
+    <!-- Artikel Lainnya -->
+<!-- <section class="py-12 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Artikel Lainnya</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> -->
+            <!-- Artikel 1 -->
+            <!-- <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <a href="article-javascript.html">
+                    <img src="/api/placeholder/400/250" alt="JavaScript" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-blue-500 text-sm font-semibold">JavaScript</span>
+                        <h3 class="text-xl font-bold text-gray-800 mt-2 mb-4">Menguasai JavaScript Modern</h3>
+                        <p class="text-gray-600">Eksplorasi fitur-fitur JavaScript modern dan cara menggunakannya dalam pengembangan web yang dinamis.</p>
+                    </div>
+                </a>
+            </article> -->
+
+            <!-- Artikel 2 -->
+            <!-- <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <a href="#">
+                    <img src="/api/placeholder/400/250" alt="React Native" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-blue-500 text-sm font-semibold">Mobile Development</span>
+                        <h3 class="text-xl font-bold text-gray-800 mt-2 mb-4">Pengenalan React Native</h3>
+                        <p class="text-gray-600">Memulai pengembangan aplikasi mobile dengan React Native untuk iOS dan Android.</p>
+                    </div>
+                </a>
+            </article> -->
+
+            <!-- Artikel 3 -->
+            <!-- <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <a href="#">
+                    <img src="/api/placeholder/400/250" alt="UI/UX Design" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-blue-500 text-sm font-semibold">UI/UX Design</span>
+                        <h3 class="text-xl font-bold text-gray-800 mt-2 mb-4">Prinsip Desain UI/UX</h3>
+                        <p class="text-gray-600">Memahami dasar-dasar desain antarmuka pengguna dan pengalaman pengguna dalam pengembangan aplikasi.</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </div>
+</section> -->
+
+    <!-- Footer -->
+    <footer class="bg-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-gray-600">
+                <p>&copy; 2025 Khaisar Rizki Maulana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

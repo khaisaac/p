@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaisar Rizki Maulana - Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet">
+    <style>
+        .profile-image {
+            filter: grayscale(100%);
+            transition: filter 0.5s ease-in-out;
+        }
+        .profile-image:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+    
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-800 text-lg">khai.</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="index.html" class="py-4 px-2 text-gray-800 font-semibold hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="index.html#about" class="py-4 px-2 text-gray-800 font-semibold hover:text-blue-500 transition duration-300">About</a>
+                    <a href="blog.html" class="py-4 px-2 text-gray-800 font-semibold hover:text-blue-500 transition duration-300">Blog</a>
+                    <a href="index.html#contact" class="py-4 px-2 text-gray-800 font-semibold hover:text-blue-500 transition duration-300">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-800 hover:text-blue-500"
+                            fill="none" stroke-linecap="round" 
+                            stroke-linejoin="round" stroke-width="2" 
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <li><a href="index.html" class="block px-2 py-4 text-sm hover:bg-blue-500 hover:text-white transition duration-300">Home</a></li>
+                <li><a href="index.html#about" class="block px-2 py-4 text-sm hover:bg-blue-500 hover:text-white transition duration-300">About</a></li>
+                <li><a href="blog.html" class="block px-2 py-4 text-sm bg-blue-500 text-white">Blog</a></li>
+                <li><a href="index.html#contact" class="block px-2 py-4 text-sm hover:bg-blue-500 hover:text-white transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section remains the same -->
+    <section id="home" class="pt-20 md:pt-40 pb-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <img src="iu.png" 
+                 alt="Khaisar Rizki Maulana" 
+                 class="profile-image rounded-full mx-auto mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <!-- Typing Animation -->
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+                    <span id="typed"></span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">Mahasiswa Teknik Informatika <br>Universitas Banten Jaya</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://github.com/khaisaac" class="text-gray-600 hover:text-blue-500"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/khaisar-rizki-86b3952b9/" class="text-gray-600 hover:text-blue-500"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.instagram.com/khaisarrizkim/" class="text-gray-600 hover:text-blue-500"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updated About Section with Programming Language Logos -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Tentang Saya</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <p class="text-gray-600">Saya adalah mahasiswa Teknik Informatika di Universitas Banten Jaya yang berasal dari Rangkasbitung. Saat ini saya sedang fokus mempelajari pengembangan web.</p>
+                    <p class="text-gray-600">Dengan semangat belajar yang tinggi, saya selalu berusaha mengembangkan diri dan mengikuti perkembangan teknologi terbaru dalam dunia pemrograman.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6">Tech Stack</h3>
+                    <div class="grid grid-cols-3 gap-6 text-center">
+                        <!-- HTML -->
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-html5 text-6xl text-orange-500 hover:scale-110 transition-transform"></i>
+                            <span class="mt-2 text-gray-600">HTML5</span>
+                        </div>
+                        <!-- CSS -->
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-css3-alt text-6xl text-blue-500 hover:scale-110 transition-transform"></i>
+                            <span class="mt-2 text-gray-600">CSS3</span>
+                        </div>
+                        <!-- JavaScript -->
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-js text-6xl text-yellow-500 hover:scale-110 transition-transform"></i>
+                            <span class="mt-2 text-gray-600">JavaScript</span>
+                        </div>
+                        <!-- PHP -->
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-php text-6xl text-purple-500 hover:scale-110 transition-transform"></i>
+                            <span class="mt-2 text-gray-600">PHP</span>
+                        </div>
+                        <!-- React -->
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-brands fa-laravel text-6xl hover:scale-110 transition-transform" style="color: #ff0000;"></i>
+                            <span class="mt-2 text-gray-600">Laravel</span>
+                        </div>
+                        <!-- Node.js -->
+                        <div class="flex flex-col items-center">
+                            <i class="fab fa-brands fa-bootstrap text-6xl hover:scale-110 transition-transform" style="color: #7547ff;"></i>
+                            <span class="mt-2 text-gray-600">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Portfolio Section -->
+     <section id="portfolio" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Portofolio</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+                    <img src="flight.png" alt="Booking Flight Ticket Management System" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sistem Manajamen Booking Tiket Pesawat</h3>
+                        <p class="text-gray-600 mb-4">Aplikasi web untuk manajemen booking tiket pesawat menggunakan Laravel</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Laravel</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">MySQL</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Midtrans</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Livewire</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Filament</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <!-- <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+                    <img src="/api/placeholder/400/250" alt="E-Commerce" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Toko Online</h3>
+                        <p class="text-gray-600 mb-4">Platform e-commerce dengan sistem keranjang belanja dan checkout</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Laravel</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">MySQL</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Midtrans</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Bootstrap</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
+                    <img src="thmbnail.png" alt="Gym" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sistem Informasi Manajamen Gym dan Mixed Martial Arts</h3>
+                        <p class="text-gray-600 mb-4">Aplikasi web untuk manajemen Gym dan Mixed Martial Arts</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">PHP</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">MySQL</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section remains the same -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Hubungi Saya</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Nama</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 mb-2">Pesan</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer remains the same -->
+    <footer class="bg-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-gray-600">
+                <p>&copy; 2025 Khaisar Rizki Maulana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
+        // Form Validation
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if(!name || !email || !message) {
+                e.preventDefault();
+                alert('Silakan lengkapi semua field!');
+                return false;
+            }
+            
+            if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+                e.preventDefault();
+                alert('Format email tidak valid!');
+                return false;
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        // Typing Animation
+        const typed = new Typed('#typed', {
+            strings: [
+                'Khaisar Rizki Maulana',
+                'Web Developer',
+                'Tech Enthusiast',
+                'Content Creator'
+            ],
+            typeSpeed: 60, // Kecepatan mengetik (ms)
+            backSpeed: 50,  // Kecepatan menghapus (ms)
+            loop: true,     // Looping animasi
+            showCursor: true, // Menampilkan kursor
+            cursorChar: '|', // Karakter kursor
+            smartBackspace: true // Menghapus hanya kata yang perlu
+        });
+    </script>
+    <!-- Swiper JS -->
+</body>
+</html>
